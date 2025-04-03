@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Feedback Form</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Student Feedback Form</h2>
+    <form action="submit_feedback.php" method="POST">
+        
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+
+        <label for="name">Roll Number:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label>How satisfied are you with this course?</label>
+        <div class="radio-group">
+            <input type="radio" id="very_satisfied" name="course_satisfaction" value="Very Satisfied">
+            <label for="very_satisfied">Very Satisfied</label>
+        </div>
+        <div class="radio-group">
+            <input type="radio" id="excellent" name="course_rating" value="Excellent">
+            <label for="excellent">Excellent</label>
+        </div>
+        <div class="radio-group">
+            <input type="radio" id="good" name="course_rating" value="Good">
+            <label for="good">Good</label>
+        </div>
+        <div class="radio-group">
+            <input type="radio" id="average" name="course_rating" value="Average">
+            <label for="average">Average</label>
+        </div>
+        <div class="radio-group">
+            <input type="radio" id="poor" name="course_rating" value="Poor">
+            <label for="poor">Poor</label>
+        </div>
+        <br>
+        <label>What do you like about this course?</label>
+        <div class="checkbox-group">
+            <input type="checkbox" id="lectures" name="likes" value="Lectures">
+            <label for="lectures">Lectures</label>
+        </div>
+        <div class="checkbox-group">
+            <input type="checkbox" id="assignments" name="likes" value="Assignments">
+            <label for="assignments">Assignments</label>
+        </div>
+        <div class="checkbox-group">
+            <input type="checkbox" id="projects" name="likes" value="Projects">
+            <label for="projects">Projects</label>
+        </div>
+        <div class="checkbox-group">
+            <input type="checkbox" id="exams" name="likes" value="Exams">
+            <label for="exams">Exams</label>
+        </div>
+        <div class="checkbox-group">
+            <input type="checkbox" id="discussions" name="likes" value="Discussions">
+            <label for="discussions">Discussions</label>
+        </div>
+<br>
+        <label for="suggestions">Suggestions for Improvement:</label>
+        <select id="suggestions" name="suggestions" size="1">
+            <option value="More Practical Sessions">More Practical Sessions</option>
+            <option value="Better Course Materials">Better Course Materials</option>
+            <option value="Interactive Classes">Interactive Classes</option>
+            <option value="More Assignments">More Assignments</option>
+            <option value="More Group Activities">More Group Activities</option>
+            <option value="Guest Lectures">Guest Lectures</option>
+            <option value="Field Trips">Field Trips</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label for="feedback">Additional Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="4" placeholder="Your comments..."></textarea>
+
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>
